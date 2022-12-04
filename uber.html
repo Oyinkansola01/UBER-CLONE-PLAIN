@@ -1,0 +1,504 @@
+<!DOCTYPE html5>
+<!DOCTYPE html5>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Uber</title>
+		<style type="text/css">
+			body{
+				font-family: sans-serif;
+			}
+			header{
+				background-color: black;
+				width: 100%;
+				height: 90px;
+			}
+			.sign-up{
+				background-image: URL(Uber/signup.png);
+				width: 100%;
+				height: 120%;
+			}
+			.seehow{
+				background-image: url(Uber/seehow.png);
+				background-position:center ;
+				width: auto;
+				height: 55%;
+			}
+			.focused{
+				display: inline-flex;
+			}
+			.safety{
+				width: 45%;
+				background-image: url(Uber/safety.png);
+				height: 370px;
+				margin-right: 20px;
+			}
+			.motion{
+				width: 45%;
+				background-image: url(Uber/motion.png);
+				height: 370px;
+				
+				margin left: 20px;
+			}
+			.footer{
+				width: 100%;
+				height: 160%;                                                                 
+				background-color: black;
+				padding left: 65px;
+				color: white;
+			}
+			.uber{
+				margin-bottom: 40px;
+			}
+			a{
+				display: block;
+				color: white;
+				text-decoration: none;
+				margin-bottom: 20px;
+
+			}
+			
+			.foot{
+				width: 25%;
+				display: inline;
+				float: left;
+			}
+			h3{
+				margin-top: 80px;
+				margin-bottom: 30px;
+				display: block;
+			}
+			#services{
+				width: 100%;
+				height: 450px;
+			}
+			.icon{
+				margin-top: 50px;
+				width: auto ;
+				height: 30px;
+				float:left;
+				margin-right: 20px;
+			}
+			.instagram{
+				margin right:20pxpx;
+				margin-top: 50px;
+				width: 30px;
+				height: 30px;
+				float:left;
+			}
+			strong{
+				vertical-align: middle;
+				width: auto;
+				margin-top: 60px;
+				height: 30px;
+				float: left;
+				margin right: 20px;
+			}
+			.world, .location{
+				margin-right: 3px;
+			}
+			.lag{
+				margin-right: 350px;
+			}
+			.download{
+				margin-top: 50px;
+				width: 150px ;
+				height: 60px;
+				float:left;
+				margin-right: 10px;
+			}
+			.last{
+				font-size: xx-small;
+				color: gray;
+				float: left;
+
+			}
+			#foot{
+			}
+			.term{
+				width: 50px;
+				margin-right:15px ;
+			}
+			.menubar{
+				padding: 10px;
+				border: 1px;
+				display: inline;
+			}
+			#uber{
+				color: white;
+				font-size: x-large;
+				width: auto;
+				display: inline;
+				margin-right: 25px;
+			}
+			.meni{
+				padding: 10px;
+				border: 1px;
+				margin-top: 10px;
+				width: auto ;
+				height: 30px;
+				float:left;
+				margin-right: 20px;
+				display: inline;
+			}
+			#help{
+				margin-right: 400px;
+			}
+			.right{
+				padding-top: 10px;
+				border: 1px;
+				display: inline;
+				margin-top: 10px;
+				width: auto ;
+				height: 30px;
+				margin-right: 10px;
+
+			}
+			#en{
+				display: inline;
+				margin-right: 10px;
+				width: auto;
+				color: white;
+			}
+			#signup{
+				padding: 10px;
+	           	border: 1px solid white;
+	           	border-radius: 20px;
+	           	background-color: white;
+	           	color: black;
+	           	height: 10px;
+	           	text-decoration: none;
+	           	vertical-align: middle;
+	           	margin-left: 20px;
+			}
+			#get{
+				width: 35em;
+				height: 30em;
+				background-color: white;
+				color: black;
+			}
+			#tabs{
+				width: 100%;
+				height: 130px;
+				background-color:ghostwhite ;
+			}
+			.money{
+				margin: 30px 50px 10px 90px;
+			}
+			.tab{
+				display: inline-flex;
+				width: 80px;
+				height: 40px;
+				line-height: 15px;
+				font-size: 15px;
+				margin: 0px 10px 0px 80px;
+			}
+			h1{
+				font-size: 50px;
+				line-height: 60px;
+				width: 470px;
+				height: 130px;
+				margin-left: 40px;
+			}
+			#active{
+				margin-left: 40px;
+			}
+			#we{
+				
+				background-color: black;
+				color: white;
+				padding: 20px;
+				border: 1px solid black;
+				font-size: 15px;
+				margin-left: 40px;
+			}
+			#learn{
+				margin-left: 40px;
+				text-decoration-line: underline;
+				text-decoration-style: dotted;
+				display: block;
+				color: black;
+				font-size: 13px;
+				margin-top: 20px;
+			}
+			#business{
+				font-size: 40px;
+				font-weight: bold;
+			}
+			#way{
+				font-weight: bold;
+			}
+			#see{
+				background-color: black;
+				color: white;
+				padding: 20px;
+				border: 1px solid black;
+				font-size: 15px;
+			}
+			.ubericon{
+				height: 200px;
+				background-color: white;
+				padding-left: 45px;
+			}
+			.iconuber{
+			 	width: 45%;
+			 	display: flex;
+			 	padding: 45px 20px 30px 0px;
+			 	float: left;
+			 	width: 42%;
+			 	font-size: 40px;
+				font-weight: bold;
+				border-bottom: 1px solid black;
+				margin-right: 20px;
+			}
+			.p{
+				font-size: initial;
+				font-weight: light;
+				float: none;
+			}
+			#pad{
+				padding:45px;
+			}
+			#love{
+				font-size: 32px;
+				font-weight: bold;
+			}
+			.were{
+				width: 540px; 
+				background-color: white; 
+				height: 200px; 
+				border-color: white;
+			}
+			.who{
+				float: right;
+				font-size: 22px; 
+				font-weight: bold; 
+				padding: 25px 8px 15px 8px;
+			}
+			#one{
+				background-color: whitesmoke; 
+				height: 400px;
+			}
+			.eight{
+				color: black;
+				text-decoration-line: none;
+				padding-top: 45px;
+				font-size: 15px;
+				font-weight: bold;
+				display: inline-block;
+				float: left;
+				border-bottom: 2px solid lightgray;
+    			margin-right: 20px;
+    			padding-bottom: 3px;
+			}
+			#black{
+				color: black;
+				display: inline-flex;
+			}
+			#grey{
+				color: grey;
+				display: inline-flex;
+			}
+			a {
+			    display: block;
+			    color: white;
+			    text-decoration: none;
+			    margin-bottom: 20px;
+
+			}
+			.nine{
+				width: 530px;
+				height: 400px;
+			}
+			.ten{
+				color: grey;
+			}
+			#eleven{
+				font-size: 32;
+				padding: 45px;
+				padding-bottom: 0px;
+			}
+		</style>
+</head>
+<body>
+	<header>
+		<div class="meni">
+			<div style="padding-left: 65px;">
+				<p id="uber">Uber</p>
+				<a href="blank" class="menubar">Products</a>
+				<a href="blank" class="menubar">Company</a>
+				<a href="blank" class="menubar">Safety</a>
+				<a href="blank" id="help" class="menubar">Help</a>
+				<img src="Uber/world.jfif" class="right">
+				<p id="en">EN</p>
+				<a href="blank" class="menubar"> login</a>
+				<a href="blank" class="menubar" id="signup"> Signup</a>
+			</div>
+		</div>
+	</header>
+
+	<div class="sign-up">
+		<div style="padding: 65px 65px 5px 65px;">
+		<div id="get">
+				<div id="tabs">
+					<img src="Uber/Earn-filled.svg" class="money">
+					<img src="Uber/restaurant-outlined.svg" class="money">
+					<img src="Uber/car-front-outlined.svg" class="money">
+					<strong class="tab">Drive or deliver</strong>
+					<strong class="tab">Eat</strong>
+					<strong class="tab">Ride</strong>
+				</div>
+
+				<div class="me">
+					<h1>Get in the driver's seat and get paid</h1>
+					<p id="active">Drive on the platform with the largest network of active riders</p>
+					<button id="we">Sign up to drive</button>
+					<a href="blank" id="learn">Learn more about driving and delivering</a>
+				</div>
+		</div>
+	</div>
+	</div>
+	<div class="seehow">			
+		<div style="padding: 4px 0px 0px 45px;">
+			<p id="business"> Uber for business</p>
+			<p id="way">Transform the way your company moves and feeds its people</p>
+			<button id="see">see how</button>
+		</div>
+	</div>
+
+
+	<h2 id="eleven">Focused on safety,wherever you go.</h2>
+
+	<section>
+		<div style="height: 600px; padding:30px 45px 0px 45px">
+			<div style="width:50%; float: left;">
+				<img src="Uber/safety.png" class="nine">
+				<h4>Our commitment to your safety</h4>
+				<p class="ten">With every safety feature and every standard in our Community Guidelines, we're commited to helping to create a safety environment for our users</p>
+				<a href="blank" class="eight">Read about our Community Guidelines</a>
+				<a href="blank" class="eight">See all safety features</a>
+			</div>
+			<div style="width: 50%; float:left;">
+				<img src="Uber/motion.png" class="nine">
+				<h4>Setting 10,000+ cities in motion</h4>
+				<p class="ten">The app is available in thousands of cities worldwide, so you can request a ride even when you're far from home</p>
+				<a href="blank" class="eight">View all cities</a>
+			</div>
+		</div>
+	</section>
+
+	<section id="two">
+		<div style="height: 250px; padding: 80px 5px 0px 45px;">
+			<div style="width: 32%; display: inline; float:left;">
+				<img src="Uber/person-multiple-outlined.svg">
+				<h4>About us</h6>
+				<p class="ten">Find out how we started, what drives us, and how we were reimagining how the world wove.</p>
+				<a href="blank" class="eight">Learn more about Uber</a>
+			</div>
+			<div style="width: 32%; display:inline; float: left;">
+				<img src="Uber/document-outlined.svg">
+				<h4>Newsroom</h4>
+				<p class="ten">See announcements about our latest releases, initiatives and partnership.</p>
+				<a href="blank" class="eight">Go to Newsroom</a>
+			</div>
+			<div style="width: 32%; display: inline; float: left;">
+				<img src="Uber/home-outlined.svg">
+				<h4>Global Citizenship</h4>
+				<p class="ten">Read about our commitment to making a positive impact in the cities we serve.</p>
+				<a href="blank" class="eight">See our partnerships</a>
+			</div>
+		</div>
+		
+	</section>
+
+	<section id="one">
+		<div id="pad">
+			<p id="love"> There's more to love in the apps</p>
+			<div>
+			<div style="display: inline;">
+				<button class="were">
+					<img src="Uber/Driver-App-logo.png">
+					<p  class="who">Download the driver's app</p>
+				</button>
+			</div>
+			<div style="float: right;">
+				<button class="were">
+					<img src="Uber/Driver-App-logo.png">
+					<p class="who">Download the driver's app</p>
+				</button>
+			</div>
+		</div>
+		</div>
+		
+	</section>
+
+	<div class="ubericon">
+		<div class=iconuber>
+			<a href="blank" id="black">Sign up to ride</a>
+		</div>
+		<div class="iconuber">
+			<a href="blank" id="grey">Sign up to ride</a>
+
+		</div>
+	</div>
+
+<footer class="footer">
+	<div style="padding-left: 65px; padding-top: 65px;">
+		<h2 class="uber">Uber</h2>
+		<p>Visit Help Center</p>
+		<div id="services">
+			<div class="company foot">
+				<h3>Company</h3>
+				<a href="blank">About us</a>
+				<a href="blank">Our offerings</a>
+				<a href="blank">Newsroom</a>
+				<a href="blank">Investors</a>
+				<a href="blank">Blogs</a>
+				<a href="blank">Careers</a>
+				<a href="blank">AI</a>
+				<a href="blank">Gift cards</a>
+			</div>
+			<div class="product foot" >
+				<h3>Products</h3>
+				<a href="blank">Ride</a>
+				<a href="blank">Drive</a>
+				<a href="blank">Eat</a>
+			</div>
+			<div class="global foot" >
+				<h3>Global Citizenship</h3>
+				<a href="blank">Safety</a>
+				<a href="blank">Diversity and Inclusion</a>
+			</div>
+			<div class="travel foot" >
+				<h3>Travel</h3>
+				<a href="blank">Airports</a>
+				<a href="blank">Cities</a>
+			</div>
+		</div>
+
+		<div>
+			<div class="icons">
+				<img src="Uber/facebook-inc-computer-icons-clip-art-facebook-b341860ed0752d0280c78401690f719c.png" class="icon">
+				<img src="Uber/8bc42cf10d82b1ea038994d3e6f6abf0.jpg" class="icon twitter">
+				<img src="Uber/225104c902930d6489aa7d64b4bdd4e0.jpg" class="icon youtube">
+				<img src="Uber/LinkedIn App Icon.jpeg" class="icon linkedin">
+				<img src="Uber/605264d46df48534f282cdcaa2a583ad.jpg" class="icon instagram">
+				<img src="Uber/world.jfif" class="icon world">
+				<strong class="eng">English</strong> 
+				<img src="Uber/Vector Location Icon, Location Icons, Location, Map PNG and Vector with Transparent Background for Free Download.jpeg" class="icon location">
+				<strong class="eng lag">Lagos</strong>
+				<img src="Uber/googleplay.jpg" class="Download">
+				<img src="Uber/6223da5bc20eb9846244228c_app-store-apple-download-logo-png-favpng-2BMS9KidgmX2fHMtAhjpVHway.jpeg" class="Download">
+			</div>
+		</div>
+
+		<div class="last">
+			<p id="foot">@2022 Uber Technologies Inc.</p>
+			<p class="term">Privacy</p>
+			<p class="term">Accessibility</p>
+			<p class="term">Terms</p>
+		</div>
+	</footer>
+</body>
+</html>
